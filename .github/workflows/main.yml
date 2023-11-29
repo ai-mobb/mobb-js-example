@@ -1,4 +1,7 @@
-on: [pull_request]
+on: pull_request:
+  types: [opened, reopened, synchronize]
+  branches: [ "master" ]
+on: workflow_dispatch:
 
 jobs:
   Checkmarx-Mobb-example:
